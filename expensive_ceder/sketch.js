@@ -7,6 +7,13 @@ function setup() {
 function draw() {
   background(0);
 
+  for (var i = 0; i < 100; i++) {
+    let x = random(400);
+    let y = random(250);
+
+    circle(x, y, 2);
+  }
+
   for (var i = 60; i < 100; i++) {
     mask = createGraphics(400, 400);
     mask.translate(0, -50);
