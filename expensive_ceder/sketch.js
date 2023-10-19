@@ -7,12 +7,14 @@ function setup() {
 function draw() {
   background(0);
 
-  for (var i = 0; i < 22; i++) {
+  for (var i = 60; i < 100; i++) {
     mask = createGraphics(400, 400);
     mask.translate(0, -50);
     mask.colorMode(HSL, 1);
-    let x = (abs(i) % 5) * 100;
-    let y = (i / 4) * 100;
+    let x = (abs(i) % 10) * 50;
+    let y = floor(i / 10) * 50;
+
+    y += 100 * noise(x / 100, y / 100) - 20;
     mask.translate(x, y);
     // mask.background(0)
     mask.blendMode(ADD);
