@@ -57,8 +57,6 @@ function draw() {
       mask.rect(0, 0, 400, 400);
       back = true;
     } else {
-      // mask.strokeWeight(10)
-      // mask.stroke(0)
       mask.triangle(x1, y1, x2, y2, x3, y3);
     }
 

@@ -1,7 +1,5 @@
 function setup() {
   createCanvas(400, 400);
-
-  // blendMode(ADD
 }
 
 function draw() {
